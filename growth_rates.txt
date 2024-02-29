@@ -1,0 +1,1 @@
+{'WT': 0.27, 'dP': 0.24, 'dT': 0.24, 'dP_trpOP': 0.29, 'dT_proOP': 0.31, 'dP_proUp': 0.049, 'dP_proUp_trpOP': 0.048}
