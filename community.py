@@ -86,17 +86,7 @@ class community:
                                           )
         
         self.nbP = self.calc_int_nb(self.rangeP)
-        
-        
-        # self.sector_widthP = self.sector_width(up_auxo = self.upPro * self.c_up_P, 
-        #                                   leak_auxo = self.lPro, 
-        #                                   up_prod = self.upPro, 
-        #                                   leak_prod = self.lPro * self.c_prod_P,
-        #                                   D = self.DiffP,
-        #                                   mu_auxo = self.mu_dP,
-        #                                   rho = self.rho)
-                                                  
-        
+    
         #DT depends on Trp, producer of Trp is DP, non-producer is DT
         self.muT = self.calc_mu_max(up_auxo = self.upTrp * self.c_up_T, 
                                     leak_auxo = self.lTrp, 
@@ -112,14 +102,6 @@ class community:
                                           mu_auxo = self.mu_dT)        
         
         self.nbT = self.calc_int_nb(self.rangeT)
-        
-        # self.sector_widthT = self.sector_width(up_auxo = self.upTrp * self.c_up_T,
-        #                                     leak_auxo = self.lTrp, 
-        #                                     up_prod = self.upTrp, 
-        #                                     leak_prod = self.lTrp * self.c_prod_T,
-        #                                     D = self.DiffT,
-        #                                     mu_auxo = self.mu_dT,
-        #                                     rho = self.rho)
         
         return None
     
@@ -270,8 +252,6 @@ class community:
         ext = self.ic * leak_prod * r0_auxo * np.exp(-x_vec/r0_auxo) / \
                 ((leak_prod + up_prod) * (r0_auxo + r0_prod))
         return ext     
-    
-   
         
     def calc_r0(self, up, leak, D, rho):
         ''' Calculate length scale of diffusion, r0

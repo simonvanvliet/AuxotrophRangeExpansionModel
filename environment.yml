@@ -1,0 +1,18 @@
+name: community_env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - scipy
+  - pandas
+  - matplotlib
+  - seaborn
+  - numba
+  - ipykernel
+  - jupyterlab
+  - pathlib
+  - pip
+  - nb_conda_kernels
+
+
