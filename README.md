@@ -1,4 +1,4 @@
-# Project Name
+# Auxotroph Range Expansion Model
 
 Model code for: Engineering a consortium of auxotrophs: amino acid uptake and leakage rates determine spatial arrangement and composition.
 
