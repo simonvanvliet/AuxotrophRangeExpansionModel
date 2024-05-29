@@ -1,6 +1,6 @@
 # Project Name
 
-Model code for: 
+Model code for: Engineering a consortium of auxotrophs: amino acid uptake and leakage rates determine spatial arrangement and composition.
 
 ## Installation
 
@@ -10,13 +10,13 @@ Create conda environment using provided environment.yml file.
 
 - Experimental-datafiles folder. Contains text files with experimental measurements.
   - growth_rates.txt: experimentally measured growth rate of all strains, in batch culture
-  - : measured range expansion patterns (equilibrium frequency, sector size, overall growth)
-- Processed-datafiles. Contains model output. All files are created by running code below.
-  - community_data_mean.csv: processed format of community_data.csv (averaged over replicates)
+  - community_data.csv: measurements of range expansion patterns (equilibrium frequency, sector size, overall growth)
+- Processed-datafiles folder. Contains model output. All files are created by running code below.
+  - community_data_mean.csv: processed format of data in community_data.csv (data averaged over replicates), output from fit_parameters_range_expansion.ipynb
   - fit_parameters.txt: fitted model parameters, output from fit_parameters_range_expansion.ipynb
   - model_predictions.csv: model predictions, output from plot_model_predictions_range_expansion.ipynb
 - community.py: python code of community class, implements community predictions using analytical equations from [S1 Text from Ref 1.](https://doi.org/10.1371/journal.pcbi.1009877.s001)
-- fit_parameters_range_expansion.ipynb: jupyter notebbok used to fit model parameters
+- fit_parameters_range_expansion.ipynb: jupyter notebook used to fit model parameters
 - plot_model_predictions_range_expansion.ipynb: jupyter notebook used to make model predictions
 
 ## Usage
