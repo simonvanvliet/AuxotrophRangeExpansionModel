@@ -138,13 +138,11 @@ class community:
         #as we have over-producers we can no longer assume that leakage is negligible compared to growth we thus need exact equations nr 17 in S1 Text
         r0_auxo = self.calc_r0(up_auxo, leak_auxo, D, self.rho)
         r0_prod = self.calc_r0(up_prod, leak_prod, D, self.rho)
-        delta = leak_prod*self.ic * 2*r0_auxo * (up_auxo + leak_auxo) / (2*mu_auxo * (r0_prod + r0_auxo) * (up_prod + leak_prod))
-        rel_leak = leak_auxo / (mu_auxo * delta)
-        c1 = delta * (rel_leak + 1)
-
-        num = delta * mu_auxo * (2*rel_leak - 1) * np.sqrt(4*delta + c1**2) - delta**2 * mu_auxo * (4/delta + 1 + 3 * rel_leak - 2 * rel_leak**2)  
-        denom = mu_auxo * delta * (2 * delta * rel_leak * (rel_leak - 1) - 1)
-            
+        delta = leak_prod*self.ic * 2*r0_auxo * (up_auxo + leak_auxo) / (2*mu_auxo * (r0_prod + r0_auxo) * (up_prod + leak_prod))        
+        ls = leak_auxo / mu_auxo # relative leakage
+        num =  (2*ls - delta) * np.sqrt(4*delta + (ls + delta)**2) - delta * (4 + delta) + ls * (2*ls - 3*delta)  
+        denom = 2 * ls * (ls - delta) - delta
+         
         range = self.beta * r0_auxo * np.log(num / denom)   
             
         return range
