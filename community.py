@@ -4,7 +4,7 @@ import numpy as np
 class community:
     """Class for a community of auxotrophs, based on model described in van Vliet et al, PLoS Comp Bio 2020"""
 
-    def __init__(self, c_up_T=1, c_up_P=1, c_prod_T=1, c_prod_P=1, mu_WT=None, mu_dT=None, mu_dP=None, **kwargs):
+    def __init__(self, c_up_T=1, c_up_P=1, c_prod_T=1, c_prod_P=1, mu_WT=None, mu_dT=None, mu_dP=None, ndim=2, **kwargs):
         """Initialize the community with a set of parameters
         
             c_up_T: factor that scales uptake rate of trp in dTrp
@@ -13,7 +13,8 @@ class community:
             c_prod_P: factor that scales production rate of pro in dTrp
             mu_WT: growth rate of WT in h^-1
             mu_dT: growth rate of dTrp mutant in h^-1
-            mu_dP: growth rate of dPro mutant in h^-1          
+            mu_dP: growth rate of dPro mutant in h^-1     
+            ndim: number of dimensions of the community, either 2 or 3     
         
         """
         
@@ -34,6 +35,7 @@ class community:
         self.cell_l = 5.2 
         self.cell_w = 0.68 
         self.beta = 0.88
+        self.ndim = ndim
         
         #set scaling factors
         self.c_up_T = c_up_T
@@ -148,14 +150,26 @@ class community:
         return range
     
     
-    def calc_int_nb(self, range):
-        '''convert interaction range to number of neighbors
+    def calc_int_nb(self, R):
+        '''convert interaction R to number of neighbors
         
-        Following equation 21 in S1 Text
+        Following equation 21 in S1 Text for 2D and equation 22 in S1 Text for 3D
         
         '''
-        range = (2 * range * (self.cell_l - self.cell_w) + np.pi * (range + self.cell_w/2)**2 - np.pi * (self.cell_w/2)**2) * self.rho2d
-        return np.round(range)
+        
+        l = self.cell_l
+        w = self.cell_w
+        
+        if self.ndim == 2:
+            num_nb = (2 * R * (l - w) + np.pi * (R + w/2)**2 - np.pi * (w/2)**2) * self.rho2d
+        elif self.ndim == 3:
+            num = (R * (R + w) * (l - w) + 4/3 * ((R+w/2)**3 - (w/2)**3)) * self.rho
+            denom = (l - w)*(w/2)**2 + (w**3)/6 
+            num_nb = num / denom
+        else:
+            raise ValueError("ndim should be 2 or 3")
+        
+        return np.round(num_nb)
         
     def calc_eq_prop(self):
         '''calculate equilibrium properties of the community
