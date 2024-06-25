@@ -4,7 +4,7 @@ import numpy as np
 class community:
     """Class for a community of auxotrophs, based on model described in van Vliet et al, PLoS Comp Bio 2020"""
 
-    def __init__(self, c_up_T=1, c_up_P=1, c_prod_T=1, c_prod_P=1, mu_WT=None, mu_dT=None, mu_dP=None, ndim=2, **kwargs):
+    def __init__(self, c_up_T=1, c_up_P=1, c_prod_T=1, c_prod_P=1, mu_WT=1, mu_dT=1, mu_dP=1, ndim=2, **kwargs):
         """Initialize the community with a set of parameters
         
             c_up_T: factor that scales uptake rate of trp in dTrp
@@ -21,7 +21,6 @@ class community:
         self.par_names = ['upPro', 'upTrp', 'DiffP', 'DiffT', 'lPro', 'lTrp', 'ic', 'mu0', 'rho', 'rho2d', 'cell_l', 'cell_w', 'beta']
           
         # parameters for the model, see S1 Table in the paper
-        mu0 = 1.29/3600 
         self.upPro = 2.04 
         self.upTrp = 24.05 
         self.DiffP = 879 
@@ -29,12 +28,12 @@ class community:
         self.lPro = 1.59e-5
         self.lTrp = 6.04e-7 
         self.ic = 20 
-        self.mu0 = mu0 if mu_WT is None else mu_WT/3600
+        self.mu0 = mu_WT/3600
         self.rho = 0.65 
         self.rho2d = 0.22 
         self.cell_l = 5.2 
         self.cell_w = 0.68 
-        self.beta = 0.88
+        self.beta = 1 # was originally 0.88, but as we care about ratios it can be set to 1
         self.ndim = ndim
         
         #set scaling factors
@@ -42,8 +41,8 @@ class community:
         self.c_up_P = c_up_P
         self.c_prod_T = c_prod_T
         self.c_prod_P = c_prod_P
-        self.mu_dT = mu0 if mu_dT is None else mu_dT/3600
-        self.mu_dP = mu0 if mu_dP is None else mu_dP/3600
+        self.mu_dT = mu_dT/3600
+        self.mu_dP = mu_dP/3600
         
         #set other parameters
         self.set_parameters(kwargs)
