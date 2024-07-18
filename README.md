@@ -1,6 +1,9 @@
 # Auxotroph Range Expansion Model
 
-Model code for: Engineering a consortium of auxotrophs: amino acid uptake and leakage rates determine spatial arrangement and composition.
+Model code for: Engineering microbial consortia: uptake and leakage rate differentially shape community arrangement and composition.    
+Estelle Pignon [1], Gábor Holló [1], Théodora Steiner [1], Simon van Vliet [1,2], Yolanda Schaerli [1]  
+[1] Department of Fundamental Microbiology, University of Lausanne.  
+[2] Biozentrum, University of Basel.
 
 ## Installation
 
