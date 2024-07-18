@@ -1,9 +1,8 @@
 cff-version: 1.2.0
 title: >-
-  Code for: 
+  Code for: Engineering microbial consortia: uptake and leakage rate differentially shape community arrangement and composition.
 message: >-
-  If you use this code, please cite it using the metadata
-  from this file.
+  If you use this code, please cite it using the metadata from this file.
 type: software
 authors:
   - given-names: Simon
@@ -27,6 +26,10 @@ abstract: >-
   This repository contains the model code used in the following
   publication:
 
+  Engineering microbial consortia: uptake and leakage rate differentially shape community arrangement and composition.  
+  Estelle Pignon [1], Gábor Holló [1], Théodora Steiner [1], Simon van Vliet [1,2], Yolanda Schaerli [1]  
+  [1] Department of Fundamental Microbiology, University of Lausanne.  
+  [2] Biozentrum, University of Basel.
 
   Model developed by Simon van Vliet
   Data by Estelle Pignon and Yolanda Schaerli
