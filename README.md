@@ -8,6 +8,7 @@ Estelle Pignon [1], Gábor Holló [1], Théodora Steiner [1], Simon van Vliet [1
 ## Installation
 
 Create conda environment using provided environment.yml file.
+i.e. use `conda env create -f environment.yml`
 
 ## Content
 
@@ -24,7 +25,7 @@ Create conda environment using provided environment.yml file.
 
 ## Usage
 
-1. run fit_parameters_range_expansion.ipynb to refit model parameters
-2. run plot_model_predictions_range_expansion.ipynb to recreate model predictions
+1. run fit_parameters_range_expansion.ipynb to refit model parameters (runtime ~1min)
+2. run plot_model_predictions_range_expansion.ipynb to recreate model predictions (runtime ~1min)
 
 [Ref 1]: van Vliet S, Hauert C, Fridberg K, Ackermann M, Dal Co A (2022) Global dynamics of microbial communities emerge from local interaction rules. PLOS Computational Biology 18(3): e1009877. [doi.org/10.1371/journal.pcbi.1009877](https://doi.org/10.1371/journal.pcbi.1009877)
