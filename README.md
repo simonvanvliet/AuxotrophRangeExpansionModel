@@ -8,7 +8,7 @@ Estelle Pignon [1], Gábor Holló [1], Théodora Steiner [1], Simon van Vliet [1
 ## Installation
 
 Create conda environment using provided environment.yml file.
-i.e. use `conda env create -f environment.yml`
+i.e. use `conda env create -f environment.yml` (install time several minutes)
 
 ## Content
 
