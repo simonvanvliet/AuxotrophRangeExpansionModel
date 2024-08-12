@@ -25,7 +25,7 @@ i.e. use `conda env create -f environment.yml` (install time several minutes)
 
 ## Usage
 
-1. run fit_parameters_range_expansion.ipynb to refit model parameters (runtime ~1min)
-2. run plot_model_predictions_range_expansion.ipynb to recreate model predictions (runtime ~1min)
+1. run fit_parameters_range_expansion.ipynb to refit model parameters (runtime ~1min), saves fitted parameters to Processed-datafiles/fit_parameters.txt.
+2. run plot_model_predictions_range_expansion.ipynb to recreate model predictions (runtime ~1min), saves figures to the Figures subfolder.
 
 [Ref 1]: van Vliet S, Hauert C, Fridberg K, Ackermann M, Dal Co A (2022) Global dynamics of microbial communities emerge from local interaction rules. PLOS Computational Biology 18(3): e1009877. [doi.org/10.1371/journal.pcbi.1009877](https://doi.org/10.1371/journal.pcbi.1009877)
