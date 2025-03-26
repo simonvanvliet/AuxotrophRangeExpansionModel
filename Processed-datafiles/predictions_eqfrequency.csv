@@ -1,33 +1,33 @@
-community,$\Delta$proC frequency,$\Delta$proC frequency SD,$\Delta$proC frequency SE,$\Delta$proC frequency SI,N,source
-Ctr,0.759394,0.0163863318653077,0.006689691970985393,0.01719640066661715,6.0,data
-Pu,0.6104434999999999,0.0280022475151549,0.011431869677207945,0.029386556539592327,6.0,data
-Tp,0.44263166666666665,0.0220639092970095,0.009007553251453863,0.023154652771714128,6.0,data
-Tp Pu,0.42764,0.0052220835401207,0.002335386755978527,0.006484073127380349,5.0,data
-Pp,0.838174,0.0489367107027025,0.019978328485302926,0.051355928310695284,6.0,data
-Pp Pu,0.6994931666666667,0.0389274268012498,0.015892055443767393,0.04085182905467368,6.0,data
-Tp Pp,0.6654288333333334,0.0756008796388419,0.03086392987012148,0.07933825750048737,6.0,data
-Tp Pp Pu,0.6915843333333334,0.0570339853198657,0.023284027005176233,0.059853496879971456,6.0,data
-Ctr,0.7592208031303973,,,,,model 10-fold increase Pro uptake
-Pu,0.6254651616448512,,,,,model 10-fold increase Pro uptake
-Tp,0.44263341971738046,,,,,model 10-fold increase Pro uptake
-Tp Pu,0.266994254477092,,,,,model 10-fold increase Pro uptake
-Pp,0.8382295481731273,,,,,model 10-fold increase Pro uptake
-Pp Pu,0.6120642690526374,,,,,model 10-fold increase Pro uptake
-Tp Pp,0.564930589386008,,,,,model 10-fold increase Pro uptake
-Tp Pp Pu,0.24963586113087388,,,,,model 10-fold increase Pro uptake
-Ctr,0.7592208031303973,,,,,model 50-fold increase Pro uptake
-Pu,0.6441948816640617,,,,,model 50-fold increase Pro uptake
-Tp,0.44263341971738046,,,,,model 50-fold increase Pro uptake
-Tp Pu,0.2811720140298911,,,,,model 50-fold increase Pro uptake
-Pp,0.8382295481731273,,,,,model 50-fold increase Pro uptake
-Pp Pu,0.6155144620602534,,,,,model 50-fold increase Pro uptake
-Tp Pp,0.564930589386008,,,,,model 50-fold increase Pro uptake
-Tp Pp Pu,0.2518110201367185,,,,,model 50-fold increase Pro uptake
-Ctr,0.7592208031303973,,,,,model 100-fold increase Pro uptake
-Pu,0.6478781767884008,,,,,model 100-fold increase Pro uptake
-Tp,0.44263341971738046,,,,,model 100-fold increase Pro uptake
-Tp Pu,0.28254345763762856,,,,,model 100-fold increase Pro uptake
-Pp,0.8382295481731273,,,,,model 100-fold increase Pro uptake
-Pp Pu,0.6162938628312857,,,,,model 100-fold increase Pro uptake
-Tp Pp,0.564930589386008,,,,,model 100-fold increase Pro uptake
-Tp Pp Pu,0.2517928698054902,,,,,model 100-fold increase Pro uptake
+community,$\Delta$proC frequency,$\Delta$proC frequency SE,source
+Ctr,0.759394,0.006689691970985393,Data
+Pu,0.6104434999999999,0.011431869677207945,Data
+Tp,0.44263166666666665,0.009007553251453863,Data
+Tp Pu,0.42764,0.002335386755978527,Data
+Pp,0.838174,0.019978328485302926,Data
+Pp Pu,0.6994931666666667,0.015892055443767393,Data
+Tp Pp,0.6654288333333334,0.03086392987012148,Data
+Tp Pp Pu,0.6915843333333334,0.023284027005176233,Data
+Ctr,0.7592208031303973,,Model 10-fold increase Pro uptake
+Pu,0.6254651616448512,,Model 10-fold increase Pro uptake
+Tp,0.44263341971738046,,Model 10-fold increase Pro uptake
+Tp Pu,0.266994254477092,,Model 10-fold increase Pro uptake
+Pp,0.8382295481731273,,Model 10-fold increase Pro uptake
+Pp Pu,0.6120642690526374,,Model 10-fold increase Pro uptake
+Tp Pp,0.564930589386008,,Model 10-fold increase Pro uptake
+Tp Pp Pu,0.24963586113087388,,Model 10-fold increase Pro uptake
+Ctr,0.7592208031303973,,Model 50-fold increase Pro uptake
+Pu,0.6441948816640617,,Model 50-fold increase Pro uptake
+Tp,0.44263341971738046,,Model 50-fold increase Pro uptake
+Tp Pu,0.2811720140298911,,Model 50-fold increase Pro uptake
+Pp,0.8382295481731273,,Model 50-fold increase Pro uptake
+Pp Pu,0.6155144620602534,,Model 50-fold increase Pro uptake
+Tp Pp,0.564930589386008,,Model 50-fold increase Pro uptake
+Tp Pp Pu,0.2518110201367185,,Model 50-fold increase Pro uptake
+Ctr,0.7592208031303973,,Model 100-fold increase Pro uptake
+Pu,0.6478781767884008,,Model 100-fold increase Pro uptake
+Tp,0.44263341971738046,,Model 100-fold increase Pro uptake
+Tp Pu,0.28254345763762856,,Model 100-fold increase Pro uptake
+Pp,0.8382295481731273,,Model 100-fold increase Pro uptake
+Pp Pu,0.6162938628312857,,Model 100-fold increase Pro uptake
+Tp Pp,0.564930589386008,,Model 100-fold increase Pro uptake
+Tp Pp Pu,0.2517928698054902,,Model 100-fold increase Pro uptake
